@@ -1,0 +1,43 @@
+.pcounter-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 160%;
+  /* or 38px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #1d1f22;
+}
+.pcounter-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #1d1f22;
+  background: none;
+  font-size: 20px;
+  /* or 38px */
+
+  color: #1d1f22;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.spacer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}

@@ -1,0 +1,39 @@
+.menu-title-cart {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  /* identical to box height, or 125% */
+  text-transform: uppercase;
+
+  color: #1d1f22;
+}
+.cart-item-content {
+}
+.p-summury {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height, or 117% */
+
+  color: #1d1f22;
+}
+
+.order-button {
+  width: 279px;
+  height: 43px;
+  background: #5ece7b;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  border: none;
+  color: #ffffff;
+  margin-bottom: 200px;
+  text-transform: uppercase;
+  &:hover {
+    cursor: pointer;
+  }
+}

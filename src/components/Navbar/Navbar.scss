@@ -1,0 +1,88 @@
+$base-color: #5ece7b;
+$font-color: #1d1f22;
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  text-align: center;
+  height: 80px;
+  color: $font-color;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: $base-color;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  transition: color 0.1s, background-color 0.1s;
+}
+a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+
+  position: relative;
+  display: block;
+  padding: 16px 0;
+  margin: 0 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+  color: $font-color;
+}
+a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: $base-color;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out;
+}
+a:hover::before,
+a:focus::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.right-icons {
+  display: flex;
+  margin-right: 50px;
+  gap: 20px;
+}
+
+.nav-logo {
+  align-self: center;
+  cursor: pointer;
+}
+
+.right-icons {
+  display: flex;
+  margin-left: auto;
+}
+.btn-icon {
+  &:hover {
+    cursor: pointer;
+  }
+  border: none;
+  background: none;
+}

@@ -1,0 +1,108 @@
+.dropdown-container {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  padding: 32px 16px 32px 16px;
+  position: absolute;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  z-index: 1;
+  margin-top: 0.5rem;
+  background-color: #ffffff;
+  transform-origin: top;
+  width: 325px;
+  border-top-width: 1px;
+  border-color: #f3f4f6;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+mybag {
+  font-weight: bold;
+  color: red;
+}
+.badge {
+  padding: 15px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+#lblCartCount {
+  font-size: 14px;
+  background: #1d1f22;
+
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+  margin-left: -5px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.viewbag-btn {
+  width: 140px;
+  height: 43px;
+
+  background: #ffffff;
+  border: 1px solid #1d1f22;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  color: #1d1f22;
+  text-transform: uppercase;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.checkout-btn {
+  width: 140px;
+  height: 43px;
+
+  /* --c-primary
+
+--_c-orange-primary
+*/
+  background: #5ece7b;
+
+  /* Inside auto layout */
+
+  flex: none;
+  border: none;
+  order: 0;
+  flex-grow: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  color: #ffffff;
+  text-transform: uppercase;
+  &:hover {
+    cursor: pointer;
+  }
+}

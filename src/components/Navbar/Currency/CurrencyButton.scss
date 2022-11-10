@@ -1,0 +1,116 @@
+$font-color: #1d1f22;
+$base-color: #5ece7b;
+.menu-currency {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  position: absolute;
+  right: -10;
+  z-index: 1;
+  margin-top: 0.5rem;
+  background-color: #ffffff;
+  transform-origin: top right;
+  width: 7rem;
+  border-top-width: 1px;
+  border-color: #f3f4f6;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  .wrapper-currency {
+    display: flex;
+    flex-direction: column;
+  }
+
+  //   -webkit-box-shadow: 0px 0px 42px -21px rgba(66, 68, 90, 1);
+  //   -moz-box-shadow: 0px 0px 42px -21px rgba(66, 68, 90, 1);
+  //   box-shadow: 0px 0px 42px -21px rgba(66, 68, 90, 1);
+  // opacity: 0;
+  // pointer-events: none;
+  // transform: translateY(20px);
+  // transition: all 200ms linear;
+}
+
+currency-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: $base-color;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out;
+}
+
+button.currency-item {
+  display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  border: none;
+  background: none;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+
+  position: relative;
+  padding: 16px 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+  color: $font-color;
+
+  cursor: pointer;
+}
+
+button.currency-item:hover {
+  background: #eeeeee;
+  text-decoration: none;
+  cursor: pointer;
+}
+button.currency-item1 {
+  text-decoration: none;
+  transition: color 0.1s, background-color 0.1s;
+}
+button.currency-item1 {
+  border: none;
+  background: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+
+  position: relative;
+  display: block;
+  padding: 16px 0;
+  margin: 0 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+  color: $font-color;
+}
+button.currency-item1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: $base-color;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out;
+}
+button.currency-item1:hover::before,
+button.currency-item1:focus::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
