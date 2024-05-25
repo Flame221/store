@@ -160,11 +160,12 @@ const ProductPage = () => {
             >
               Add to cart
             </button>
-            <div
+            
+          </div>
+          <div
               className="product-description"
               dangerouslySetInnerHTML={{ __html: data?.product.description }}
             ></div>
-          </div>
         </>
       )}
     </div>
