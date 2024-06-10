@@ -7,7 +7,7 @@ const ErrorPage = () => {
       <div className="backhome-button">
         <Link to="/">Home</Link>
       </div>
-      <h1>This page doesn't exit :(</h1>
+      <h1>This page doesn't exist :(</h1>
     </div>
   );
 };
